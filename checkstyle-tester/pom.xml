@@ -12,7 +12,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<checkstyle-plugin.version>2.17</checkstyle-plugin.version>
-		<checkstyle.version>6.19-SNAPSHOT</checkstyle.version>
+		<checkstyle.version>7.0-SNAPSHOT</checkstyle.version>
 		<sevntu-checkstyle.version>1.20.0</sevntu-checkstyle.version>
 		<jxr-plugin.version>2.5</jxr-plugin.version>
 		<checkstyle.config.location>https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/resources/google_checks.xml</checkstyle.config.location>
@@ -74,18 +74,16 @@
 			<name>sevntu-maven</name>
 			<url>http://sevntu-checkstyle.github.com/sevntu.checkstyle/maven2</url>
 		</pluginRepository>
-	</pluginRepositories>
 
-    <repositories>
-        <repository>
-            <id>oss.sonatype.org</id>
-            <name>oss.sonatype.org</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-            </snapshots>
-        </repository>
-    </repositories>
+		<pluginRepository>
+			<id>oss.sonatype.org</id>
+			<name>oss.sonatype.org</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
 
 </project>
